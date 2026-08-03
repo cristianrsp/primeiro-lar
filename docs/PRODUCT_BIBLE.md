@@ -421,3 +421,213 @@ Ela aumenta a sensação de participação?
 
 Ela cria uma memória para o futuro?
 
+
+
+# Capítulo 4 — Arquitetura da Experiência
+
+## Princípio
+
+O Primeiro Lar deve ser construído como uma plataforma de experiências, não como uma simples página de lista de presentes.
+
+O casal não cria apenas um espaço para receber presentes.
+
+Ele constrói uma jornada capaz de aproximar seus convidados da história, do momento atual e dos sonhos que estão sendo construídos.
+
+---
+
+# Modelo de produto
+
+## Produto centrado na experiência
+
+A arquitetura do Primeiro Lar deve seguir o seguinte modelo:
+
+Casal
+
+↓
+
+Criação da experiência
+
+↓
+
+Personalização da narrativa
+
+↓
+
+Compartilhamento com convidados
+
+↓
+
+Jornada do convidado
+
+↓
+
+Participação e presente
+
+↓
+
+Relacionamento pós-evento
+
+---
+
+# Camadas da experiência
+
+A experiência do Primeiro Lar é organizada em cinco grandes camadas.
+
+---
+
+# Camada 1 — Identidade do Casal
+
+Representa a personalidade da experiência.
+
+Elementos:
+
+- nomes do casal;
+- foto principal;
+- data do evento;
+- mensagem inicial;
+- identidade visual;
+- informações básicas.
+
+Objetivo:
+
+Criar uma primeira impressão de pertencimento.
+
+O convidado deve sentir que entrou em uma experiência criada especificamente para aquele casal.
+
+---
+
+# Camada 2 — Narrativa do Casal
+
+A narrativa é o principal elemento de diferenciação do produto.
+
+O Primeiro Lar deve oferecer uma estrutura guiada de storytelling, permitindo personalização sem exigir conhecimento de design ou criação de conteúdo.
+
+A estrutura inicial pode seguir:
+
+## Capítulo 1 — Nossa história
+
+Como o casal se conheceu e iniciou sua jornada.
+
+## Capítulo 2 — Nossa caminhada
+
+Momentos importantes, conquistas e memórias.
+
+## Capítulo 3 — O momento atual
+
+A transição para uma nova fase.
+
+## Capítulo 4 — Nosso primeiro lar
+
+O significado daquela conquista.
+
+## Capítulo 5 — O futuro que estamos construindo
+
+Sonhos e expectativas para essa nova etapa.
+
+---
+
+# Camada 3 — O Significado dos Presentes
+
+Os presentes não devem ser apresentados apenas como produtos.
+
+Cada item representa participação na construção do novo lar.
+
+A experiência deve transformar:
+
+"Comprar uma panela"
+
+em:
+
+"Participar dos primeiros momentos vividos nessa cozinha."
+
+O valor emocional deve complementar o valor financeiro.
+
+---
+
+# Camada 4 — Participação do Convidado
+
+O convidado deve ser tratado como participante da história.
+
+Além da escolha do presente, a experiência pode permitir:
+
+- mensagens;
+- lembranças;
+- interações;
+- participação em dinâmicas;
+- registros afetivos.
+
+O objetivo é criar uma conexão entre casal e convidado.
+
+---
+
+# Camada 5 — Pós-experiência
+
+A jornada não termina no pagamento.
+
+O relacionamento deve continuar após o evento.
+
+Possíveis experiências futuras:
+
+- mural de mensagens;
+- álbum do evento;
+- agradecimento personalizado;
+- histórico de participação dos convidados.
+
+---
+
+# Modelo de personalização
+
+O Primeiro Lar deve seguir o princípio:
+
+## Estrutura guiada + personalização
+
+A plataforma oferece uma experiência de alta qualidade como base.
+
+O casal personaliza:
+
+- textos;
+- imagens;
+- vídeos;
+- ordem de alguns elementos;
+- identidade visual.
+
+A liberdade não deve comprometer a qualidade final da experiência.
+
+---
+
+# Princípios de navegação
+
+## A narrativa conduz, mas não bloqueia.
+
+A plataforma deve incentivar o convidado a conhecer a história do casal.
+
+Porém, a lista de presentes deve estar sempre acessível.
+
+O convidado pode:
+
+- explorar toda a experiência;
+- seguir diretamente para os presentes;
+- retornar à narrativa posteriormente.
+
+---
+
+# Arquitetura preparada para expansão
+
+O Primeiro Lar será inicialmente desenvolvido para chá de panela e construção do primeiro lar.
+
+Entretanto, sua arquitetura deve permitir futuros formatos de experiências, como:
+
+- casamento;
+- bodas;
+- nascimento;
+- outras celebrações importantes.
+
+Essa expansão deve acontecer através de novos modelos de experiência, não pela reconstrução do produto.
+
+---
+
+# Decisão estratégica
+
+O Primeiro Lar nasce como uma solução especializada.
+
+Sua tecnologia, porém, deve ser construída como uma plataforma flexível de experiências emocionais.
