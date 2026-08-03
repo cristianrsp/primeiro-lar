@@ -2428,3 +2428,342 @@ Funcionalidades futuras não devem ser construídas agora, mas o banco não deve
 # Objetivo do modelo de dados
 
 Criar uma base capaz de suportar experiências emocionais personalizadas, mantendo simplicidade suficiente para validar o Primeiro Lar e flexibilidade para sua evolução como plataforma.
+
+
+
+
+# Capítulo 11 — Arquitetura Técnica
+
+## Princípio
+
+A arquitetura técnica do Primeiro Lar deve permitir que o produto seja construído rapidamente, mantendo uma base sólida para evolução futura.
+
+O objetivo do MVP não é criar uma infraestrutura complexa, mas construir uma plataforma organizada, escalável e preparada para novos formatos de experiência.
+
+---
+
+# Estratégia arquitetural
+
+O Primeiro Lar utilizará uma arquitetura de aplicação única com módulos internos bem definidos.
+
+Modelo:
+
+
+Aplicação Primeiro Lar
+
+├── Autenticação
+├── Experiências
+├── Conteúdo
+├── Presentes
+├── Pagamentos
+├── Mensagens
+├── Analytics
+└── Administração futura
+
+
+
+Essa abordagem evita complexidade prematura e mantém organização para evolução.
+
+---
+
+# Stack tecnológica
+
+## Frontend
+
+Tecnologia:
+
+- Lovable como plataforma de desenvolvimento inicial;
+- React;
+- TypeScript;
+- interface responsiva.
+
+Responsável por:
+
+- painel administrativo do casal;
+- experiência pública dos convidados.
+
+---
+
+# Backend
+
+## Supabase
+
+O Supabase será utilizado como infraestrutura principal.
+
+Responsabilidades:
+
+- banco PostgreSQL;
+- autenticação;
+- armazenamento;
+- APIs;
+- regras de segurança;
+- funções serverless.
+
+---
+
+# Armazenamento
+
+## Supabase Storage
+
+Responsável por armazenar:
+
+- fotos dos casais;
+- vídeos;
+- imagens dos presentes;
+- arquivos da experiência.
+
+---
+
+# Arquitetura de ambientes
+
+O sistema terá dois ambientes principais:
+
+---
+
+# Área privada do casal
+
+Responsável pela criação e gerenciamento.
+
+Requer:
+
+- autenticação;
+- autorização;
+- proteção de dados.
+
+Funcionalidades:
+
+- editar história;
+- gerenciar presentes;
+- visualizar pagamentos;
+- acompanhar mensagens.
+
+---
+
+# Experiência pública do convidado
+
+Responsável pela interação emocional.
+
+Não requer criação de conta.
+
+Permite:
+
+- visualizar história;
+- conhecer o lar;
+- escolher presentes;
+- realizar pagamentos;
+- enviar mensagens.
+
+---
+
+# Separação de responsabilidades
+
+A aplicação deve separar:
+
+## Interface do convidado
+
+Foco:
+
+- narrativa;
+- emoção;
+- conversão.
+
+---
+
+## Interface administrativa
+
+Foco:
+
+- criação;
+- organização;
+- gerenciamento.
+
+---
+
+Essa separação evita que limitações do painel prejudiquem a experiência final.
+
+---
+
+# Módulos principais
+
+## Módulo de autenticação
+
+Responsável por:
+
+- login do casal;
+- gerenciamento de sessão;
+- controle de acesso.
+
+---
+
+## Módulo de experiências
+
+Responsável por:
+
+- criação da experiência;
+- configurações;
+- publicação.
+
+---
+
+## Módulo de conteúdo
+
+Responsável por:
+
+- capítulos;
+- textos;
+- imagens;
+- vídeos.
+
+---
+
+## Módulo de presentes
+
+Responsável por:
+
+- cadastro;
+- categorias;
+- disponibilidade;
+- links externos.
+
+---
+
+## Módulo financeiro
+
+Responsável por:
+
+- pedidos;
+- pagamentos;
+- integração com gateway.
+
+---
+
+## Módulo de mensagens
+
+Responsável por:
+
+- mensagens dos convidados;
+- armazenamento das memórias.
+
+---
+
+## Módulo de analytics
+
+Responsável por capturar comportamento.
+
+Métricas iniciais:
+
+- visitas;
+- visualização da história;
+- visualização de presentes;
+- início de pagamento;
+- pagamentos concluídos;
+- mensagens enviadas.
+
+---
+
+# Integrações externas
+
+## Asaas
+
+Responsável pelo fluxo financeiro.
+
+Fluxo:
+
+Convidado inicia pagamento
+
+↓
+
+Asaas cria cobrança
+
+↓
+
+Pagamento processado
+
+↓
+
+Webhook enviado
+
+↓
+
+Sistema atualiza status
+
+
+
+---
+
+# Segurança e permissões
+
+## Casal
+
+Pode:
+
+- editar sua experiência;
+- gerenciar conteúdos;
+- visualizar seus dados financeiros.
+
+Não pode:
+
+- acessar experiências de outros casais.
+
+---
+
+## Convidado
+
+Pode:
+
+- visualizar experiência pública;
+- participar da experiência;
+- realizar pagamentos.
+
+Não pode:
+
+- editar conteúdos;
+- acessar informações privadas.
+
+---
+
+# Preparação para evolução
+
+Mesmo sem implementação inicial, a arquitetura deve permitir:
+
+## Aplicativo mobile futuro
+
+A API deve permitir que uma aplicação móvel seja criada posteriormente.
+
+---
+
+## Internacionalização
+
+Textos e conteúdos devem evitar dependência direta do código.
+
+---
+
+## Painel administrativo interno
+
+Futuro:
+
+- gerenciamento de casais;
+- planos;
+- suporte;
+- métricas gerais.
+
+---
+
+# Ambiente de validação
+
+O primeiro uso real do produto será utilizado como ambiente de aprendizado.
+
+Objetivos:
+
+- validar comportamento dos convidados;
+- identificar pontos de melhoria;
+- medir conversão;
+- coletar feedback.
+
+Após validação, novas camadas podem ser adicionadas.
+
+---
+
+# Objetivo da arquitetura
+
+Construir uma plataforma simples o suficiente para validar rapidamente, mas estruturada o suficiente para evoluir de uma experiência individual para um produto escalável.
