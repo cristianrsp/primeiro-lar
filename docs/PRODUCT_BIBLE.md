@@ -1399,3 +1399,493 @@ Supabase Storage para:
 4. O convidado deve ter o mínimo de barreiras possível.
 5. O MVP deve ser simples, mas não impedir evolução futura.
 6. A arquitetura deve permitir novos formatos de experiências.
+
+
+
+# Capítulo 8 — Design System e Princípios de UX/UI
+
+## Filosofia de design
+
+O Primeiro Lar deve ser percebido como uma experiência humana antes de ser percebido como uma plataforma digital.
+
+O design deve desaparecer para que a história do casal seja protagonista.
+
+A interface existe para criar conexão, não para chamar atenção para si mesma.
+
+---
+
+# Princípio central
+
+## Menos interface. Mais história.
+
+O convidado não deve sentir que está navegando em um sistema.
+
+Ele deve sentir que está entrando em uma experiência criada pelo casal.
+
+---
+
+# Direção visual
+
+O território visual do Primeiro Lar será:
+
+## Casa contemporânea + memória afetiva
+
+A estética deve transmitir:
+
+- acolhimento;
+- intimidade;
+- confiança;
+- celebração;
+- proximidade.
+
+---
+
+# Características visuais
+
+## Imagens
+
+Prioridade para:
+
+- fotos reais do casal;
+- momentos espontâneos;
+- ambientes;
+- detalhes do cotidiano.
+
+As imagens devem transmitir autenticidade.
+
+---
+
+## Layout
+
+Diretrizes:
+
+- grandes áreas visuais;
+- pouco excesso de informação;
+- leitura confortável;
+- navegação fluida.
+
+---
+
+## Tipografia
+
+A tipografia deve equilibrar:
+
+- personalidade;
+- elegância;
+- legibilidade.
+
+Evitar estilos excessivamente formais ou decorativos.
+
+---
+
+# Arquitetura de experiências
+
+O produto possui duas experiências distintas.
+
+---
+
+# Área do convidado
+
+Objetivo:
+
+Criar conexão emocional.
+
+Características:
+
+- narrativa visual;
+- simplicidade;
+- imersão;
+- poucos elementos de interface.
+
+O convidado deve sentir que está conhecendo uma história.
+
+---
+
+# Área do casal
+
+Objetivo:
+
+Criar e administrar a experiência.
+
+Características:
+
+- organização;
+- clareza;
+- produtividade;
+- facilidade de edição.
+
+O casal deve conseguir construir sua experiência sem conhecimento técnico.
+
+---
+
+# Mobile First
+
+A experiência deve ser desenvolvida prioritariamente para dispositivos móveis.
+
+Motivo:
+
+O principal canal de acesso dos convidados será através de links compartilhados por:
+
+- WhatsApp;
+- redes sociais;
+- convites digitais.
+
+A experiência mobile deve ser considerada a versão principal.
+
+---
+
+# Personalização
+
+O modelo adotado será:
+
+## Templates fechados + personalização
+
+A plataforma oferece estruturas de alta qualidade.
+
+O casal personaliza:
+
+- textos;
+- fotos;
+- vídeos;
+- informações pessoais;
+- elementos permitidos pelo template.
+
+---
+
+# Princípio de controle criativo
+
+O casal deve sentir liberdade sem comprometer a qualidade final.
+
+A plataforma deve evitar uma experiência totalmente aberta que gere páginas inconsistentes.
+
+---
+
+# Interações
+
+O Primeiro Lar não utilizará gamificação tradicional.
+
+Não serão priorizados:
+
+- pontos;
+- rankings;
+- competição;
+- recompensas artificiais.
+
+As interações devem ser emocionais e naturais.
+
+Exemplos:
+
+- mensagens;
+- lembranças;
+- participação;
+- registros.
+
+---
+
+# Princípios de UX
+
+## 1. Emoção antes da transação
+
+A experiência deve criar conexão antes de apresentar o presente.
+
+---
+
+## 2. A narrativa conduz, mas não bloqueia
+
+O convidado deve ser incentivado a conhecer a história.
+
+Porém, nunca deve ser impedido de acessar os presentes.
+
+---
+
+## 3. Personalização com simplicidade
+
+O casal não deve precisar aprender design.
+
+A plataforma deve conduzir a criação.
+
+---
+
+## 4. Autenticidade acima de perfeição
+
+Histórias reais são mais importantes que experiências visualmente perfeitas.
+
+---
+
+## 5. Tecnologia invisível
+
+O usuário deve perceber a emoção, não a complexidade tecnológica por trás dela.
+
+---
+
+# Objetivo do Design System
+
+Criar uma linguagem visual consistente capaz de transformar diferentes histórias de casais em experiências únicas, mantendo qualidade, emoção e escalabilidade.
+
+
+
+# Capítulo 9 — Painel Administrativo do Casal
+
+## Objetivo
+
+O Painel Administrativo é o ambiente onde o casal cria, gerencia e acompanha sua experiência no Primeiro Lar.
+
+Ele deve funcionar como uma ferramenta de criação guiada, permitindo que pessoas sem conhecimento técnico construam uma experiência personalizada para seus convidados.
+
+---
+
+# Princípio central
+
+O painel deve equilibrar:
+
+## Orientação
+
+Ajudar o casal a criar uma experiência completa.
+
+## Liberdade
+
+Permitir ajustes e personalizações após a criação inicial.
+
+---
+
+# Modelo de utilização
+
+O casal terá duas formas de interação:
+
+## Primeiro acesso — Criação guiada
+
+Na primeira utilização, o sistema conduzirá o casal por uma sequência de etapas.
+
+Fluxo:
+
+1. Informações do casal
+2. História
+3. Conteúdos visuais
+4. Presentes
+5. Revisão
+6. Publicação
+
+Objetivo:
+
+Garantir que a experiência seja criada de forma completa.
+
+---
+
+## Uso recorrente — Painel aberto
+
+Após a criação inicial, o casal poderá acessar livremente as áreas da experiência.
+
+---
+
+# Estrutura de navegação
+
+## Dashboard inicial
+
+Objetivo:
+
+Apresentar o status da experiência.
+
+Informações:
+
+- percentual de conclusão;
+- próximas ações;
+- status da publicação;
+- alertas importantes.
+
+Exemplo:
+
+"Seu Primeiro Lar está 80% pronto."
+
+---
+
+# Seção 1 — Informações do casal
+
+Responsável pelos dados básicos:
+
+- nomes;
+- foto principal;
+- data do evento;
+- mensagem inicial;
+- informações gerais.
+
+---
+
+# Seção 2 — História do casal
+
+Área de construção da narrativa.
+
+Permite:
+
+- criar capítulos;
+- adicionar textos;
+- enviar fotos;
+- enviar vídeos;
+- reorganizar conteúdos.
+
+Objetivo:
+
+Transformar a história do casal em uma experiência visual.
+
+---
+
+# Seção 3 — Presentes
+
+Gerenciamento da lista de presentes.
+
+O casal poderá cadastrar:
+
+## Produto externo
+
+Campos:
+
+- nome;
+- descrição;
+- imagem;
+- valor;
+- link externo.
+
+---
+
+## Presente simbólico
+
+Campos:
+
+- nome;
+- descrição;
+- imagem;
+- valor.
+
+---
+
+## Cota
+
+Campos:
+
+- objetivo;
+- descrição;
+- valor desejado;
+- valores recebidos.
+
+---
+
+# Seção 4 — Convidados
+
+Área de acompanhamento dos participantes.
+
+Informações:
+
+- acessos;
+- presentes escolhidos;
+- pagamentos realizados;
+- mensagens enviadas.
+
+---
+
+# Seção 5 — Mensagens
+
+Centraliza as mensagens deixadas pelos convidados.
+
+Objetivo:
+
+Transformar interações em memórias.
+
+---
+
+# Seção 6 — Financeiro
+
+Área de acompanhamento financeiro.
+
+Informações:
+
+- valores recebidos;
+- pagamentos pendentes;
+- histórico de transações;
+- integração financeira.
+
+---
+
+# Seção 7 — Configurações
+
+Informações:
+
+- dados da experiência;
+- preferências;
+- configurações futuras.
+
+---
+
+# Seção 8 — Publicação
+
+Antes da experiência ser compartilhada, o casal deverá passar por uma etapa de revisão.
+
+Checklist:
+
+- informações completas;
+- história configurada;
+- imagens adicionadas;
+- presentes cadastrados;
+- experiência visual revisada.
+
+Após aprovação:
+
+A experiência pode ser publicada e compartilhada.
+
+---
+
+# Regras de edição
+
+Após publicada, a experiência continuará editável.
+
+O casal poderá alterar:
+
+- textos;
+- fotos;
+- vídeos;
+- presentes disponíveis.
+
+Porém, informações relacionadas a pagamentos concluídos devem possuir controle para evitar inconsistências.
+
+---
+
+# Princípios de UX do painel
+
+## 1. Clareza antes da emoção
+
+O painel deve utilizar linguagem simples e objetiva.
+
+Exemplo:
+
+"Adicionar presente"
+
+em vez de:
+
+"Adicionar uma nova memória para o lar"
+
+---
+
+## 2. Criar antes de configurar
+
+O usuário deve sentir que está criando algo, não preenchendo formulários.
+
+---
+
+## 3. Sempre mostrar o resultado
+
+O casal deve conseguir visualizar como os convidados enxergarão a experiência.
+
+---
+
+## 4. Evitar complexidade
+
+A plataforma deve limitar escolhas quando isso melhorar a qualidade final.
+
+---
+
+# Objetivo do MVP
+
+O painel deve permitir que um casal:
+
+- crie sua experiência sozinho;
+- publique sem suporte manual;
+- atualize conteúdos;
+- acompanhe participação dos convidados.
