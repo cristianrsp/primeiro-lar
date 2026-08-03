@@ -92,3 +92,127 @@ Toda funcionalidade futura deverá fortalecer pelo menos um dos pilares do produ
 
 Status:
 Aprovada
+
+
+
+# Capítulo 2 — Objetivos Estratégicos
+
+## Objetivo principal
+
+Transformar o ato de presentear em uma experiência significativa, fazendo com que o convidado se sinta parte da história do casal antes de escolher um presente.
+
+---
+
+## Objetivos de negócio
+
+- Criar uma plataforma que possa ser utilizada por qualquer casal.
+- Diferenciar-se das listas de presentes tradicionais por meio da experiência.
+- Incentivar recomendações espontâneas entre casais e convidados.
+- Construir um produto escalável, independente do evento que originou sua criação.
+
+---
+
+## Objetivos de experiência
+
+Ao final da jornada, queremos que o convidado:
+
+- compreenda quem é o casal;
+- sinta que conhece melhor sua história;
+- escolha um presente com mais significado;
+- conclua a compra de forma simples e agradável;
+- saia da plataforma com uma percepção positiva da experiência.
+
+---
+
+## Objetivos para o casal
+
+A plataforma deve permitir que o casal:
+
+- conte sua história de forma autêntica;
+- personalize sua experiência sem necessidade de conhecimento técnico;
+- acompanhe a evolução da lista de presentes em tempo real;
+- receba presentes sem fricção para os convidados.
+
+---
+
+## Indicadores de sucesso (KPIs)
+
+A longo prazo, o produto deverá acompanhar métricas como:
+
+- taxa de conclusão da jornada;
+- tempo médio de permanência na experiência;
+- percentual de convidados que acessam mais de uma seção da narrativa;
+- taxa de conversão entre visitantes e presentes concluídos;
+- quantidade de casais recorrentes ou indicados por outros usuários;
+- índice de satisfação do casal após o evento;
+- índice de recomendação espontânea (NPS ou métrica equivalente).
+
+---
+
+## Princípios estratégicos
+
+1. A experiência vem antes da transação.
+2. Emoção nunca deve comprometer a usabilidade.
+3. Cada casal deve conseguir criar uma experiência única.
+4. O convidado nunca deve se sentir obrigado a consumir conteúdo para conseguir presentear.
+5. A plataforma deve equilibrar narrativa, praticidade e confiança.
+
+
+
+## Objetivo Norte (North Star Metric)
+
+Nossa principal medida de sucesso será:
+
+**Percentual de convidados que percorrem a narrativa e concluem uma contribuição.**
+
+Essa métrica representa o equilíbrio entre engajamento emocional e conversão.
+
+
+
+## Ordem de Prioridade
+
+1. Criar conexão emocional.
+2. Facilitar a contribuição.
+3. Gerar lembranças positivas.
+4. Permitir personalização.
+5. Escalar o produto.
+
+
+## O produto estará falhando quando:
+
+- convidados abandonarem a plataforma antes da contribuição;
+- a narrativa parecer longa ou cansativa;
+- a compra gerar insegurança;
+- o casal precisar de suporte para configurar a plataforma;
+- o sistema parecer uma lista de presentes comum.
+
+
+
+
+DEC-004
+
+A principal métrica do produto será a combinação entre engajamento e contribuição.
+
+Status:
+Aprovada
+
+---
+
+DEC-005
+
+Nenhuma funcionalidade poderá aumentar a complexidade da contribuição.
+
+Status:
+Aprovada
+
+---
+
+DEC-006
+
+Toda funcionalidade deverá reforçar pelo menos um dos objetivos estratégicos.
+
+Status:
+Aprovada
+
+
+
