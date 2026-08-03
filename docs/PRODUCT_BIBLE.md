@@ -211,8 +211,213 @@ DEC-006
 
 Toda funcionalidade deverá reforçar pelo menos um dos objetivos estratégicos.
 
+
+
+# Capítulo 3 — Jornada do Convidado
+
+## Princípio
+
+A jornada do convidado não deve ser construída para levá-lo ao pagamento.
+
+Ela deve ser construída para fazê-lo sentir que está participando da história do casal.
+
+O pagamento é apenas a consequência natural dessa experiência.
+
+---
+
+## Objetivos da jornada
+
+Ao longo da navegação, o convidado deve:
+
+- sentir-se bem-vindo;
+- criar conexão com o casal;
+- conhecer sua trajetória;
+- compreender o significado daquele momento;
+- escolher um presente de forma consciente;
+- concluir a compra com simplicidade;
+- encerrar a experiência sentindo que participou do início de uma nova fase.
+
+---
+
+# Etapa 1 — Convite
+
+O convidado recebe um link personalizado.
+
+Esse primeiro contato deve despertar curiosidade.
+
+O objetivo não é revelar tudo imediatamente, mas gerar expectativa para a experiência.
+
+---
+
+# Etapa 2 — Boas-vindas
+
+Ao acessar a plataforma, o convidado encontra uma página de boas-vindas que apresenta o casal e convida para conhecer sua história.
+
+A linguagem deve ser acolhedora, leve e autêntica.
+
+Desde esse momento, a navegação para a lista de presentes deve permanecer disponível para quem preferir ir diretamente ao objetivo.
+
+---
+
+# Etapa 3 — Descobrindo a história
+
+O convidado percorre uma narrativa construída pelo casal.
+
+Essa narrativa pode incluir:
+
+- textos;
+- fotos;
+- vídeos;
+- Como nos conhecemos;
+- Primeira viagem;
+- Momentos difíceis;
+- Pedido de noivado;
+- Reforma;
+- Primeiro Lar;
+- momentos marcantes;
+- conquistas;
+- sonhos para o novo lar.
+
+O conteúdo deve despertar conexão, nunca parecer uma obrigação de leitura.
+
+---
+
+# Etapa 4 — A escolha do presente
+
+Após conhecer melhor o casal, o convidado acessa a lista de presentes.
+
+Nesse momento, os presentes deixam de representar apenas objetos e passam a simbolizar participação na construção do novo lar.
+
+A escolha deve ser simples, intuitiva e rápida.
+
+Durante toda a navegação, o sistema poderá apresentar indicadores discretos de progresso, mostrando ao convidado quanto da experiência já foi percorrido.
+
+---
+
+# Etapa 5 — Conclusão
+
+Depois da confirmação do presente, a plataforma apresenta uma mensagem de agradecimento personalizada.
+
+O encerramento deve reforçar que o convidado fez parte de um momento importante da história do casal.
+
+Sempre que possível, a experiência pode oferecer formas de deixar uma lembrança, como mensagens, fotos ou votos para o futuro.
+
+---
+
+# Fluxo resumido
+
+Convite
+
+↓
+
+Boas-vindas
+
+↓
+
+Nossa História
+
+↓
+
+Lista de Sonhos
+
+↓
+
+Pagamento
+
+↓
+
+Experiências do Chá
+
+↓
+
+Livro de Memórias
+
+↓
+
+Mensagem Final
+
+↓
+
+Fim
+
+---
+
+# Princípios da jornada
+
+- A narrativa convida; nunca obriga.
+- A lista de presentes permanece acessível em toda a navegação.
+- A experiência deve funcionar tanto para quem deseja explorar quanto para quem quer concluir rapidamente.
+- A emoção deve enriquecer a jornada, sem criar barreiras.
+- Cada etapa deve aproximar o convidado do casal antes da conclusão da compra.
+
 Status:
 Aprovada
 
 
+## Estados emocionais esperados
+
+Etapa 1
+
+Curiosidade
+
+---
+
+Etapa 2
+
+Acolhimento
+
+---
+
+Etapa 3
+
+Conexão
+
+---
+
+Etapa 4
+
+Participação
+
+---
+
+Etapa 5
+
+Gratidão
+
+---
+
+Etapa 6
+
+Diversão
+
+---
+
+Etapa 7
+
+Pertencimento
+
+
+## Pontos críticos da jornada
+
+Durante toda a experiência existem apenas três decisões realmente importantes.
+
+1.
+Entrar na história.
+
+2.
+Contribuir.
+
+3.
+Continuar participando das experiências.
+
+
+
+## Mantra interno
+Toda funcionalidade deve responder uma destas perguntas:
+
+Ela ajuda a contar a história?
+
+Ela aumenta a sensação de participação?
+
+Ela cria uma memória para o futuro?
 
