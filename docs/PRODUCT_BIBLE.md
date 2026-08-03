@@ -876,3 +876,209 @@ O MVP será considerado validado quando demonstrar que:
 
 
 
+# Capítulo 6 — Pagamentos, Modelo de Negócio e Fluxo Financeiro
+
+## Princípio
+
+O Primeiro Lar não deve ser percebido como uma ferramenta financeira.
+
+O pagamento é apenas uma etapa dentro de uma experiência emocional maior.
+
+O produto vende a criação de uma experiência personalizada para o casal e seus convidados.
+
+---
+
+# Modelo de negócio do MVP
+
+O modelo inicial será baseado em assinatura paga pelo casal.
+
+O casal paga para criar, personalizar e utilizar sua experiência no Primeiro Lar.
+
+A receita da plataforma não depende diretamente do valor dos presentes recebidos.
+
+---
+
+# Justificativa do modelo
+
+A assinatura reforça o posicionamento premium da plataforma.
+
+O casal não está pagando para receber dinheiro.
+
+Está pagando para criar uma experiência diferenciada para seus convidados.
+
+---
+
+# Fluxo financeiro principal
+
+## Presentes sem link externo
+
+Fluxo:
+
+Convidado escolhe presente
+
+↓
+
+Escolhe valor/contribuição
+
+↓
+
+Realiza pagamento dentro do Primeiro Lar
+
+↓
+
+Gateway financeiro processa
+
+↓
+
+Pagamento confirmado via webhook
+
+↓
+
+Valor fica disponível para o casal
+
+---
+
+# Gateway financeiro
+
+A primeira integração prevista é com uma plataforma de pagamentos como o Asaas.
+
+Responsabilidades:
+
+- geração de cobranças;
+- processamento de pagamentos;
+- confirmação automática;
+- comunicação via webhook;
+- atualização dos status dentro do sistema.
+
+---
+
+# Presentes externos
+
+Alguns presentes poderão possuir links externos.
+
+Exemplo:
+
+Uma Air Fryer disponível em uma loja.
+
+Fluxo:
+
+Convidado escolhe o presente
+
+↓
+
+Primeiro Lar apresenta o item
+
+↓
+
+Convidado acessa o link externo
+
+↓
+
+Compra acontece fora da plataforma
+
+---
+
+# Tipos de presentes
+
+O sistema deverá suportar três formatos:
+
+## 1. Produto real externo
+
+Item específico com link para compra.
+
+Exemplo:
+
+"Eletrodoméstico escolhido pelo casal."
+
+---
+
+## 2. Presente simbólico
+
+Um objetivo criado pelo casal com valor definido.
+
+Exemplo:
+
+"Montar nossa cozinha."
+
+Nesse modelo, o convidado contribui financeiramente e o casal decide a utilização final.
+
+---
+
+## 3. Cotas
+
+Contribuições para objetivos maiores.
+
+Exemplo:
+
+"Ajude na construção da nossa sala."
+
+---
+
+# Princípio de transparência
+
+A comunicação do presente deve refletir corretamente o funcionamento.
+
+Quando o convidado não estiver comprando um produto diretamente, a experiência deve comunicar que ele está contribuindo para aquele objetivo.
+
+A plataforma nunca deve criar uma expectativa falsa sobre a compra de um item específico.
+
+---
+
+# Separação entre presente e pagamento
+
+A arquitetura deve separar:
+
+## Entidade Presente
+
+Responsável por:
+
+- nome;
+- descrição;
+- imagem;
+- tipo;
+- valor;
+- disponibilidade.
+
+---
+
+## Entidade Financeira
+
+Responsável por:
+
+- pagamento;
+- status;
+- transação;
+- confirmação;
+- histórico.
+
+---
+
+Essa separação permite evolução futura sem comprometer a estrutura.
+
+---
+
+# Objetivo financeiro do MVP
+
+O objetivo inicial não é maximizar receita.
+
+O objetivo é validar:
+
+- se casais pagam pela experiência;
+- se convidados completam a jornada;
+- se a proposta gera valor percebido.
+
+---
+
+# Decisões futuras
+
+Após validação do produto, podem ser explorados:
+
+- planos premium;
+- templates exclusivos;
+- inteligência artificial para criação da narrativa;
+- integrações com lojas;
+- benefícios para parceiros;
+- novos formatos de eventos.
+
+
+
