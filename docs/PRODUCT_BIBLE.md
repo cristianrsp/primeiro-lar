@@ -1082,3 +1082,320 @@ Após validação do produto, podem ser explorados:
 
 
 
+# Capítulo 7 — Arquitetura Técnica e Modelo de Dados
+
+## Princípio
+
+A arquitetura do Primeiro Lar deve suportar a criação de experiências personalizadas, mantendo simplicidade suficiente para validar o MVP.
+
+O sistema deve ser construído pensando no primeiro evento real, mas com uma estrutura preparada para evolução futura.
+
+---
+
+# Conceito central: Experiência
+
+A principal entidade do sistema é a Experiência.
+
+O casal não cria apenas uma página.
+
+Ele cria uma experiência composta por:
+
+- narrativa;
+- conteúdos;
+- presentes;
+- convidados;
+- pagamentos;
+- mensagens.
+
+No MVP:
+
+Experiência = Chá de panela / Primeiro Lar.
+
+No futuro:
+
+Experiência poderá representar diferentes momentos importantes.
+
+---
+
+# Arquitetura de usuários
+
+O MVP utilizará o conceito de conta compartilhada do casal.
+
+Um único acesso será responsável pela criação e gerenciamento da experiência.
+
+Estrutura:
+
+Usuário
+
+↓
+
+Experiência do casal
+
+↓
+
+Conteúdos e configurações
+
+---
+
+## Evolução futura
+
+A arquitetura deve permitir múltiplos usuários associados à mesma experiência.
+
+Exemplo:
+
+Cristian
+
++
+
+Milena
+
+↓
+
+Uma experiência compartilhada
+
+---
+
+# Convidados
+
+Convidados não precisarão criar conta.
+
+O acesso será realizado através de um link personalizado.
+
+Fluxo:
+
+Link
+
+↓
+
+Experiência
+
+↓
+
+Presente
+
+↓
+
+Pagamento
+
+↓
+
+Mensagem
+
+---
+
+Para identificação dos convidados, o sistema poderá coletar:
+
+- nome;
+- contato;
+- informações necessárias para pagamento.
+
+Esses dados não representam uma conta de usuário.
+
+---
+
+# Arquitetura de conteúdo
+
+A narrativa do casal será construída através de blocos de conteúdo.
+
+Estrutura:
+
+Experiência
+
+↓
+
+Capítulos
+
+↓
+
+Blocos
+
+---
+
+Tipos iniciais de bloco:
+
+- texto;
+- imagem;
+- vídeo.
+
+Essa estrutura permite evolução futura com novos componentes.
+
+---
+
+# Modelo de presentes
+
+Todos os presentes serão tratados como uma única entidade.
+
+Tipos:
+
+## Produto externo
+
+Possui:
+
+- nome;
+- descrição;
+- imagem;
+- valor;
+- link externo.
+
+---
+
+## Presente simbólico
+
+Representa um objetivo do casal.
+
+Exemplo:
+
+"Montar nossa cozinha."
+
+Possui:
+
+- nome;
+- descrição;
+- valor.
+
+---
+
+## Cotas
+
+Representam contribuições.
+
+Exemplo:
+
+"Ajude nossa sala."
+
+Possui:
+
+- objetivo;
+- valor total;
+- valores recebidos.
+
+---
+
+# Modelo financeiro
+
+Pagamento e presente devem ser entidades separadas.
+
+Fluxo:
+
+Presente
+
+↓
+
+Pedido
+
+↓
+
+Pagamento
+
+---
+
+Motivo:
+
+Um convidado pode escolher um presente e não concluir o pagamento.
+
+A arquitetura deve suportar diferentes estados.
+
+---
+
+# Estrutura inicial de dados
+
+Principais entidades:
+
+## usuários
+
+Responsável pelos acessos.
+
+---
+
+## experiências
+
+Representa a experiência criada pelo casal.
+
+---
+
+## capítulos
+
+Organização da narrativa.
+
+---
+
+## blocos_conteúdo
+
+Elementos visuais da experiência.
+
+---
+
+## presentes
+
+Itens disponíveis para participação.
+
+---
+
+## convidados
+
+Identificação das pessoas que participaram.
+
+---
+
+## pedidos
+
+Registro das intenções de presente.
+
+---
+
+## pagamentos
+
+Registro financeiro.
+
+---
+
+## mensagens
+
+Memórias deixadas pelos convidados.
+
+---
+
+## planos
+
+Controle comercial futuro.
+
+---
+
+## assinaturas
+
+Controle do modelo de negócio.
+
+---
+
+# Stack inicial sugerida
+
+## Backend
+
+Supabase:
+
+- PostgreSQL;
+- autenticação;
+- Storage;
+- APIs;
+- Webhooks.
+
+---
+
+## Armazenamento
+
+Supabase Storage para:
+
+- fotos;
+- vídeos;
+- arquivos da experiência.
+
+---
+
+# Princípios técnicos
+
+1. A experiência é a entidade central.
+2. Conteúdo deve ser modular.
+3. Pagamento nunca deve estar misturado ao presente.
+4. O convidado deve ter o mínimo de barreiras possível.
+5. O MVP deve ser simples, mas não impedir evolução futura.
+6. A arquitetura deve permitir novos formatos de experiências.
