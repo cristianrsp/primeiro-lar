@@ -1889,3 +1889,542 @@ O painel deve permitir que um casal:
 - publique sem suporte manual;
 - atualize conteúdos;
 - acompanhe participação dos convidados.
+
+
+# Capítulo 10 — Banco de Dados e Modelo de Dados
+
+## Princípio
+
+O banco de dados do Primeiro Lar deve representar a experiência criada pelo casal, e não apenas uma lista de presentes.
+
+A estrutura deve permitir:
+
+- criação de narrativas personalizadas;
+- gerenciamento de presentes;
+- processamento financeiro;
+- interação com convidados;
+- evolução futura para diferentes tipos de experiências.
+
+---
+
+# Tecnologia
+
+O banco de dados será construído utilizando:
+
+## Supabase
+
+Componentes utilizados:
+
+- PostgreSQL como banco principal;
+- Supabase Auth para autenticação;
+- Supabase Storage para arquivos;
+- APIs geradas;
+- Webhooks para integrações financeiras.
+
+---
+
+# Entidade central: Experiência
+
+A principal entidade do sistema será a experiência.
+
+Uma experiência representa todo o ambiente criado pelo casal.
+
+Ela concentra:
+
+- identidade;
+- narrativa;
+- presentes;
+- convidados;
+- mensagens;
+- pagamentos.
+
+---
+
+# Modelo inicial de relacionamento
+
+
+Usuário
+
+↓
+
+Experiência
+
+↓
+
+├── Capítulos
+
+├── Conteúdos
+
+├── Presentes
+
+├── Convidados
+
+├── Pedidos
+
+├── Pagamentos
+
+└── Mensagens
+
+
+---
+
+# Tabela: usuários
+
+Responsável pelo acesso ao sistema.
+
+Campos principais:
+
+
+id
+
+nome
+
+email
+
+senha/auth
+
+created_at
+
+
+Observação:
+
+No MVP, o casal utilizará uma conta compartilhada.
+
+Porém, a estrutura deve permitir múltiplos usuários no futuro.
+
+---
+
+# Tabela: experiências
+
+Representa a experiência criada pelo casal.
+
+Campos principais:
+
+
+id
+
+nome
+
+tipo_experiencia
+
+usuario_responsavel_id
+
+status
+
+created_at
+
+updated_at
+
+
+Exemplo:
+
+
+tipo_experiencia:
+"chá_de_panela"
+
+
+Futuramente:
+
+
+casamento
+bodas
+nascimento
+
+
+---
+
+# Tabela futura: experiência_usuários
+
+Não obrigatória no MVP.
+
+Permitirá colaboração futura.
+
+Exemplo:
+
+
+experiencia_id
+
+usuario_id
+
+permissao
+
+
+Possibilidades:
+
+- administrador;
+- editor;
+- visualização.
+
+---
+
+# Estrutura de narrativa
+
+A história do casal será armazenada em uma estrutura modular.
+
+Não serão utilizados campos fixos de texto e mídia.
+
+---
+
+# Tabela: capítulos
+
+Representa os grandes momentos da narrativa.
+
+Campos:
+
+
+id
+
+experiencia_id
+
+titulo
+
+descricao
+
+ordem
+
+created_at
+
+
+Exemplo:
+
+
+Como tudo começou
+
+Nossa caminhada
+
+Nosso primeiro lar
+
+
+---
+
+# Tabela: blocos_conteudo
+
+Representa os elementos dentro dos capítulos.
+
+Campos:
+
+
+id
+
+capitulo_id
+
+tipo
+
+conteudo
+
+arquivo_url
+
+ordem
+
+
+Tipos:
+
+
+texto
+
+imagem
+
+video
+
+
+---
+
+# Armazenamento de arquivos
+
+Fotos e vídeos serão armazenados utilizando:
+
+## Supabase Storage
+
+Arquivos:
+
+- fotos do casal;
+- imagens dos presentes;
+- vídeos da narrativa.
+
+---
+
+# Estrutura de presentes
+
+Todos os presentes serão tratados como uma única entidade.
+
+---
+
+# Tabela: presentes
+
+Campos:
+
+
+id
+
+experiencia_id
+
+tipo
+
+nome
+
+descricao
+
+imagem_url
+
+valor
+
+link_externo
+
+meta_valor
+
+status
+
+created_at
+
+
+---
+
+Tipos:
+
+## Produto externo
+
+Possui:
+
+
+link_externo
+
+
+O convidado é direcionado para compra fora da plataforma.
+
+---
+
+## Presente simbólico
+
+Representa um objetivo do casal.
+
+Exemplo:
+
+"Montar nossa cozinha."
+
+---
+
+## Cota
+
+Representa uma contribuição parcial.
+
+Exemplo:
+
+"Ajude nossa sala."
+
+---
+
+# Estrutura financeira
+
+Pagamento será separado da escolha do presente.
+
+---
+
+# Tabela: convidados
+
+Representa pessoas que interagem com a experiência.
+
+Campos:
+
+
+id
+
+experiencia_id
+
+nome
+
+telefone
+
+email
+
+created_at
+
+
+O convidado não possui conta.
+
+---
+
+# Tabela: pedidos
+
+Representa a intenção de participação.
+
+Campos:
+
+
+id
+
+experiencia_id
+
+convidado_id
+
+presente_id
+
+valor
+
+status
+
+created_at
+
+
+Status:
+
+
+criado
+
+aguardando_pagamento
+
+concluido
+
+cancelado
+
+
+---
+
+# Tabela: pagamentos
+
+Representa a transação financeira real.
+
+Campos:
+
+
+id
+
+pedido_id
+
+gateway
+
+gateway_transaction_id
+
+valor
+
+status
+
+data_pagamento
+
+
+Status:
+
+
+pendente
+
+pago
+
+falhou
+
+cancelado
+
+
+---
+
+# Integração financeira
+
+O sistema receberá atualizações através de webhook.
+
+Fluxo:
+
+
+Pagamento realizado
+
+↓
+
+Gateway financeiro
+
+↓
+
+Webhook
+
+↓
+
+Atualização do pagamento
+
+↓
+
+Atualização do pedido
+
+
+---
+
+# Tabela: mensagens
+
+Armazena mensagens enviadas pelos convidados.
+
+Campos:
+
+
+id
+
+experiencia_id
+
+convidado_id
+
+texto
+
+created_at
+
+
+---
+
+# Modelo comercial
+
+Estruturas futuras:
+
+## planos
+
+
+id
+
+nome
+
+valor
+
+recursos
+
+
+---
+
+## assinaturas
+
+
+id
+
+usuario_id
+
+plano_id
+
+status
+
+inicio
+
+fim
+
+
+---
+
+# Regras arquiteturais
+
+## 1. Experiência é a entidade principal
+
+O produto não deve ser modelado como uma lista de presentes.
+
+---
+
+## 2. Conteúdo deve ser modular
+
+Novos tipos de conteúdo devem poder ser adicionados sem alteração estrutural.
+
+---
+
+## 3. Pagamento separado de presente
+
+A escolha do presente e a transação financeira possuem ciclos diferentes.
+
+---
+
+## 4. MVP simples, arquitetura preparada
+
+Funcionalidades futuras não devem ser construídas agora, mas o banco não deve impedir sua criação.
+
+---
+
+# Objetivo do modelo de dados
+
+Criar uma base capaz de suportar experiências emocionais personalizadas, mantendo simplicidade suficiente para validar o Primeiro Lar e flexibilidade para sua evolução como plataforma.
