@@ -631,3 +631,248 @@ Essa expansão deve acontecer através de novos modelos de experiência, não pe
 O Primeiro Lar nasce como uma solução especializada.
 
 Sua tecnologia, porém, deve ser construída como uma plataforma flexível de experiências emocionais.
+
+
+
+
+# Capítulo 5 — Funcionalidades do MVP
+
+## Objetivo do MVP
+
+O MVP do Primeiro Lar tem como objetivo validar a principal hipótese do produto:
+
+> Uma experiência personalizada baseada na história do casal aumenta a conexão emocional dos convidados e transforma o ato de presentear em uma participação mais significativa.
+
+A primeira versão deve entregar uma jornada completa:
+
+História → Conexão → Presente → Pagamento → Mensagem
+
+---
+
+# Escopo do MVP
+
+O MVP será composto por três grandes áreas:
+
+1. Experiência do casal
+2. Experiência do convidado
+3. Gestão dos presentes e interações
+
+---
+
+# Área 1 — Experiência do Casal
+
+## Cadastro do casal
+
+O casal deverá conseguir criar sua experiência informando:
+
+- nomes;
+- foto principal;
+- data do evento;
+- mensagem inicial;
+- informações básicas.
+
+Objetivo:
+
+Criar a identidade inicial da experiência.
+
+---
+
+# Construção da história
+
+A criação da narrativa seguirá um modelo guiado.
+
+O casal não cria uma página em branco.
+
+A plataforma conduz através de perguntas e etapas pré-definidas, permitindo personalização completa do conteúdo.
+
+Exemplos:
+
+- Como vocês se conheceram?
+- Qual momento marcou a história de vocês?
+- Por que esse novo lar é importante?
+- Quais sonhos vocês estão construindo juntos?
+
+---
+
+# Conteúdos da narrativa
+
+O casal poderá adicionar:
+
+- textos;
+- fotos;
+- vídeos.
+
+A experiência final deve transformar esses conteúdos em uma jornada visual para os convidados.
+
+---
+
+# Cadastro de presentes
+
+O sistema deverá permitir três formatos de presentes:
+
+## 1. Presente fictício
+
+Um presente criado pelo casal com significado emocional.
+
+Exemplo:
+
+"Nosso primeiro jantar na casa nova."
+
+---
+
+## 2. Produto real externo
+
+Um item específico com referência para compra externa.
+
+Exemplo:
+
+"Eletrodoméstico escolhido para nossa cozinha."
+
+---
+
+## 3. Cotas/contribuições
+
+Uma arrecadação para objetivos maiores.
+
+Exemplo:
+
+"Ajude a montar nossa sala."
+
+---
+
+A arquitetura deve tratar todos como uma única entidade chamada "Presente", diferenciada pelo tipo.
+
+---
+
+# Área 2 — Experiência do Convidado
+
+## Entrada personalizada
+
+O convidado acessa uma experiência exclusiva do casal.
+
+A primeira impressão deve apresentar:
+
+- identidade do casal;
+- mensagem de boas-vindas;
+- convite para conhecer a história.
+
+---
+
+# Narrativa emocional
+
+O convidado poderá navegar pela história do casal através de:
+
+- capítulos;
+- fotos;
+- vídeos;
+- textos.
+
+A narrativa deve ser o caminho principal da experiência.
+
+Porém:
+
+A lista de presentes deve permanecer acessível em qualquer momento.
+
+---
+
+# Escolha do presente
+
+O convidado poderá:
+
+- visualizar presentes disponíveis;
+- escolher um presente;
+- realizar sua contribuição;
+- confirmar sua participação.
+
+---
+
+# Pagamento
+
+O MVP deverá incluir uma experiência de pagamento integrada.
+
+O pagamento não deve ser tratado apenas como uma etapa financeira.
+
+Ele representa a conclusão da participação do convidado na história do casal.
+
+---
+
+# Mensagens dos convidados
+
+Após a conclusão do presente, o convidado poderá deixar uma mensagem para o casal.
+
+Essa etapa reforça o aspecto emocional da experiência.
+
+O objetivo é transformar a plataforma também em um espaço de memórias.
+
+---
+
+# Área 3 — Gestão do Casal
+
+O casal deverá conseguir:
+
+- visualizar presentes recebidos;
+- acompanhar contribuições;
+- acessar mensagens dos convidados;
+- acompanhar a evolução da experiência.
+
+---
+
+# Funcionalidades fora do MVP
+
+As seguintes funcionalidades não fazem parte da primeira versão:
+
+- ranking de convidados;
+- quiz "quem conhece o casal?";
+- gamificação;
+- álbum pós-evento avançado;
+- IA para criação da história;
+- personalizações visuais avançadas;
+- múltiplos tipos de eventos.
+
+Essas funcionalidades podem ser adicionadas após validação do produto.
+
+---
+
+# Prioridades do MVP
+
+## Must Have
+
+- Criação da história do casal;
+- Upload de fotos;
+- Upload de vídeos;
+- Lista de presentes híbrida;
+- Checkout/pagamento;
+- Mensagens dos convidados.
+
+---
+
+## Should Have
+
+- Templates de narrativa;
+- Sugestões de conteúdo;
+- Personalização visual básica;
+- Dashboard simples para o casal.
+
+---
+
+## Could Have
+
+- IA assistente;
+- Gamificação;
+- Experiências pós-evento;
+- Recursos sociais.
+
+---
+
+# Critério de sucesso do MVP
+
+O MVP será considerado validado quando demonstrar que:
+
+- casais conseguem criar uma experiência sem depender de suporte manual;
+- convidados entendem o propósito da plataforma;
+- convidados completam a jornada até o presente;
+- convidados deixam sinais de conexão emocional;
+- casais percebem valor suficiente para recomendar o produto.
+
+
+
